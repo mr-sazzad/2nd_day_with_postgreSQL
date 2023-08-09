@@ -32,8 +32,7 @@ POSTGRE SQL
   ✅ SELECT * FROM Employee WHERE name LIKE '%A';  -- GIVE ME JUST THOSE ITEMS WHICH ARE ENDS WITH CHARACTER A (CASE SENSITIVE 🥵)
 
 
-  -- SPECIFIC POSITION ![ValeuValtatuiPositivoValtatuiGIF](https://github.com/mr-sazzad/2nd_day_with_postgreSQL/assets/97055612/f96e4857-82bb-47bf-b059-d9ff979b6014)
-
+  -- SPECIFIC POSITION 👾
 
   ✅ SELECT * FROM Employee WHERE name LIKE '_A%';  -- GIVE ME JUST THOSE ITEMS THERE SECOND LETTER IS A (CASE SENSITIVE 🥵)
 
