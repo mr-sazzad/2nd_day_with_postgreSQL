@@ -47,5 +47,12 @@ POSTGRE SQL
   ✅ SELECT * FROM Employee WHERE name IS NULL;  -- GIVE ME JUST THOSE ITEMS THERE NAME VALUE IS NULL (CASE SENSITIVE 🥵) 1️⃣
 
   ✅ SELECT * FROM Employee WHERE name = NULL;  -- GIVE ME JUST THOSE ITEMS THERE NAME VALUE IS NULL (CASE SENSITIVE 🥵) 2️⃣
+
+
+  -- JOINING 🧑‍🤝‍🧑
+  -- 1️⃣ INNER JOIN IT WARKS ON TOWDAIMENTION
   
+  SELECT e.name, e.job_role, depertment_name    -- name and job_role FROM EMPLOYEE TABLE AND department_name FROM DEPARTMENT TABLE
+   FROM Employee e  -- ALIAS
+   INNER JOIN Department ON department_id = e.department_id   -- IT'S CALLED 'ON' CONDITION 🥗
  ```
