@@ -20,7 +20,7 @@ POSTGRE SQL
   -- IN, NOT IN, BETWEEN, LIKE
 
 
-  ✅ SELECT * FROM Employee WHERE empID IN (3, 5, 244)  -- GIVE ME JUST THOSE ITEMS WHICH CONTAIN THESE ID'S 🎈
+  ✅ SELECT * FROM Employee WHERE empID IN (3, 5, 244)  -- GIVE ME JUST THOSE ITEMS WHICH CONTAIN THESE ID 🎈
 
   ✅ SELECT * FROM Employee WHERE empID NOT IN (1, 7, 2)  -- GIVE ME JUST THOSE ITEMS WHICH NOT CONTAIN THESE ID'S 🥗
 
@@ -54,9 +54,29 @@ POSTGRE SQL
 
 
   -- JOINING 🧑‍🤝‍🧑
-  -- 1️⃣ INNER JOIN IT WARKS ON TOWDAIMENTION
+  -- 1️⃣ INNER JOIN IT WORKS ON TOWDAIMENTION
   
   SELECT e.name, e.job_role, depertment_name    -- name and job_role FROM EMPLOYEE TABLE AND department_name FROM DEPARTMENT TABLE
    FROM Employee e  -- ALIAS
    INNER JOIN Department ON department_id = e.department_id   -- IT'S CALLED 'ON' CONDITION 🥗
+
+
+  -- AGGREGATE 🎈
+
+  1️⃣ SELECT AVG(salary) avarazeSalary FROM Employees   -- IS'S USED TO GETTING AVARAZE FROM A COLUMN AND avarazeSalary IS ALIAS 💡
+
+  2️⃣ SELECT AVG(salary) AS avarazeSalary FROM Employees   -- WE ALSO CAN USE AS FOR ALIASING 💡
+
+  3️⃣ SELECT MIN(salary) AS maxSalary FROM Employees   -- IT'S USED FOR GETTING MAX VALUE FROM A COLUMN 💡
+
+  4️⃣ SELECT MAX(salary) AS minSalary FROM Employees   -- IT'S USED FOR GETTING MIN VALUE FROM A COLUMN 💡
+
+  5️⃣ SELECT SUM(salary) AS totalSalary FROM Employees   -- IT'S USED FOR GETTING MIN VALUE FROM A COLUMN 💡
+
+
+  SELECT deptId AVG(salary) FROM employees GROUP BY  deptId  -- CREATE GROUP AND GET THERE SALARY 💡
+
+  SELECT * FROM EMPLOYEES e RIGHT JOIN departments d ON e.edptId = d.deptId  -- COMPLEX 
+
+  
  ```
