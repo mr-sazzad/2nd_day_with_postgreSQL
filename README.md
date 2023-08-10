@@ -1,4 +1,4 @@
-[![https://miro.medium.com/v2/resize:fit:1200/0*9QkC5_96-gq5W5vW.png](https://github.com/mr-sazzad/)]
+[![PostgreSQL Image](https://kinsta.com/wp-content/uploads/2022/02/postgres-logo.png)](https://github.com/mr-sazzad)
 
 
 
