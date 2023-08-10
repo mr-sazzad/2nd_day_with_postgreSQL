@@ -76,7 +76,30 @@ POSTGRE SQL
 
   SELECT deptId AVG(salary) FROM employees GROUP BY  deptId  -- CREATE GROUP AND GET THERE SALARY 💡
 
-  SELECT * FROM EMPLOYEES e RIGHT JOIN departments d ON e.edptId = d.deptId  -- COMPLEX 
+  SELECT * FROM EMPLOYEES e RIGHT JOIN departments d ON e.edptId = d.deptId  -- COMPLEX RIGHT JOIN MEANS RIGHT SIDE PRIORITY ✅
 
+  SELECT d.name
+  FROM EMPLOYEES e FULL JOIN departments d
+  ON e.edptId = d.deptId
+  GROUP BY d.name
+
+
+  SELECT d.name, AVG(salary)
+  FROM EMPLOYEES e FULL JOIN departments d
+  ON e.edptId = d.deptId
+  GROUP BY d.name
+
+
+  SELECT d.name, AVG(salary) , SUM(salary), MAX(salary), MIN(salary)
+  FROM EMPLOYEES e FULL JOIN departments d
+  ON e.edptId = d.deptId
+  GROUP BY d.name
+
+
+  SELECT d.name, AVG(salary) , SUM(salary), MAX(salary), MIN(salary)
+  FROM EMPLOYEES e FULL JOIN departments d
+  ON e.edptId = d.deptId
+  GROUP BY d.name
+  HAVING AVG(e.salary) > 20000
   
  ```
