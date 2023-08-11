@@ -101,5 +101,4 @@ POSTGRE SQL
   ON e.edptId = d.deptId
   GROUP BY d.name
   HAVING AVG(e.salary) > 20000
-  
  ```
